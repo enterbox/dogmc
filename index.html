@@ -12,12 +12,19 @@ body {
   background-attachment:fixed;
 }
 div.whitebackgroud {
-  padding: 8px;
+  padding: 16px;
   background: rgb(255, 255, 255);
+  border-radius: 1em;
+  border: 0.3em;
+  border-color: rgb(34, 23, 9);
+  border-style: outset;
+  box-shadow: 0 0 10px rgba(0, 0, 0,0.8);
+  -webkit-animation:fadeinup 1.7s;
 }
 div.inground{
   padding: 8px;
   background: rgb(255, 241, 220);
+  line-height:170%;
 }
 div.middle {
   margin: 0 auto;
@@ -40,6 +47,16 @@ div.title{
 div.brown{
   color: rgb(179, 122, 47);
 }
+@keyframes fadeinup {
+from {
+opacity: 0;
+transform: translatey(-100%);
+}
+to {
+opacity: 1;
+transform: translatey(0);
+}
+}
 </style>
 </head>
 <title>甜菜岛</title>
@@ -48,7 +65,7 @@ div.brown{
 <div class="whitebackgroud">
   <div class="middle">
     甜菜岛MC
-    <img src="https://pic1.imgdb.cn/item/67b85504d0e0a243d401634d.png" alt="甜菜" width="40" height="28">
+    <img src="https://pic1.imgdb.cn/item/67b85504d0e0a243d401634d.png" alt="甜菜" width="30" height="24">
   </div>
   <div class="inground">
     <div class="txt">
@@ -85,7 +102,7 @@ div.brown{
     </div>
   </div>
 </div>
-<p></p>
+<h1></h1>
 <div class="whitebackgroud">
   <div class="middle">
     其他的东西
